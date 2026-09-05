@@ -1,0 +1,114 @@
+.chapter { position: relative; isolation: isolate; overflow: hidden; background: #02060d; color: #ecf3fc; padding: 100px 0 115px; }
+.content { position: relative; width: min(1280px, 88%); margin: auto; }
+.space, .landscape { position: absolute; z-index: -1; pointer-events: none; left: 0; right: 0; }
+.space { top: 0; height: 680px; opacity: .8; mask-image: linear-gradient(transparent, #000 15%, #000 40%, transparent 75%); }
+.landscape { bottom: 0; height: 500px; overflow: hidden; opacity: .7; mask-image: linear-gradient(transparent 10%, #000 56%, #000 78%, transparent); }
+.space img { width: 100%; height: 100%; object-fit: cover; }
+.space img { object-position: center top; }
+.landscape img { position: absolute; width: max(100%, 1600px); height: auto; max-width: none; bottom: 0; left: 50%; transform: translateX(-50%); }
+.intro { text-align: center; margin: 0 auto 55px; }
+.eyebrow { color: #afc1d7; font-size: 11px; font-weight: 400; letter-spacing: .35em; line-height: 1.7; }
+.title { font-size: clamp(64px, 7vw, 106px); line-height: 1.12; letter-spacing: -.055em; font-weight: 700; margin: 8px 0 6px; }
+.title, .name { color: #c1def7; background: linear-gradient(160deg, #fff 25%, #d3dfee 50%, #82bde9 85%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.subtitle { font-size: clamp(18px, 1.6vw, 23px); letter-spacing: -.02em; color: #d4dfeb; }
+.introCopy { font-size: 14px; line-height: 1.7; color: #adbed1; max-width: 660px; margin: 15px auto 0; }
+.portals { display: grid; grid-template-columns: minmax(0, 1fr) 132px minmax(0, 1fr); align-items: stretch; }
+.portal { position: relative; isolation: isolate; overflow: hidden; border: 1px solid #7badd33d; border-radius: 25px; background: #030b14b3; }
+.portalContent { position: relative; z-index: 1; padding: 34px 36px 30px; height: 100%; display: flex; flex-direction: column; }
+.label { font-size: 10px; letter-spacing: .23em; color: #bccbdb; margin-bottom: 9px; }
+.portal h3 { font-size: clamp(42px, 4.4vw, 62px); letter-spacing: -.02em; font-weight: 600; line-height: 1.12; color: #edf4fe; }
+.linguistic { font-size: 12px; color: #acbdd0; margin-top: 4px; }
+.definition { font-size: 14px; line-height: 1.65; max-width: 340px; color: #c0cddd; margin-top: 20px; margin-bottom: 30px; }
+.definition strong { font-weight: 500; color: #eef5ff; }
+.galaxy { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% center; opacity: .74; transition: transform 1.4s ease; }
+.astra::after { content: ''; position: absolute; inset: 0; z-index: 0; background: linear-gradient(90deg, #030a14d6 5%, #030a1480 62%, #030a1426), linear-gradient(0deg, #020810 1%, transparent 55%); }
+.qualities { list-style: none; display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; padding: 0; margin: auto 0 0; }
+.qualities li { display: flex; flex-direction: column; align-items: center; gap: 9px; font-size: 10px; color: #bbcadd; }
+.qualities svg { width: 27px; height: 27px; color: #bbd5ed; }
+.trails { position: absolute; top: -30px; right: -105px; width: 100%; height: 100%; opacity: .8; transition: translate 1.4s ease; pointer-events: none; mask-image: linear-gradient(#000 40%, transparent 92%); }
+.ize { background: linear-gradient(120deg, #030b14f2 35%, #07172866); }
+.ize .definition { max-width: 350px; }
+.wordFamily { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px 7px; list-style: none; padding: 0; margin: auto 0 0; }
+.wordFamily li { border-bottom: 1px solid #83aace3d; padding: 7px 0; font-size: 11px; text-align: center; color: #b7c7d8; letter-spacing: .01em; background: linear-gradient(0deg, #14304a33, transparent); border-radius: 6px 6px 0 0; }
+.wordFamily span { color: #eef5fd; }
+.connection { position: relative; display: grid; place-items: center; }
+.connection::before { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, #9ed4ff, #6c9bd1, #9ed4ff); box-shadow: 0 0 12px #67b5ff59; }
+.connection::after { content: ''; position: absolute; height: 170px; width: 1px; background: linear-gradient(transparent, #8dbbe3 48%, transparent); }
+.connection span { z-index: 1; display: grid; place-items: center; width: 54px; height: 54px; border: 1px solid #a8d7ff; border-radius: 50%; background: #030b15; color: #e5f4ff; font-size: 33px; font-weight: 400; line-height: 1; box-shadow: 0 0 23px #6da9ee38, inset 0 0 16px #519ce721; }
+.synthesis { text-align: center; position: relative; padding-top: 60px; }
+.synthesis::before { content: ''; position: absolute; width: 1px; height: 43px; top: 0; left: 50%; background: linear-gradient(#91bfe448, transparent); }
+.synthesis .eyebrow { margin-bottom: 17px; }
+.equation { font-size: clamp(20px, 2.2vw, 29px); letter-spacing: .04em; color: #b5c3d7; }
+.name { font-size: clamp(43px, 5vw, 72px); line-height: 1.15; letter-spacing: -.025em; font-weight: 700; }
+.tagline { font-size: 20px; color: #bbcbe0; margin-top: 6px; }
+.philosophy { max-width: 710px; margin: 25px auto 0; font-size: 15px; line-height: 1.8; color: #c0cddd; text-wrap: pretty; }
+.coined { font-size: 11px; letter-spacing: .04em; color: #95a9c0; margin-top: 14px; }
+.vocabulary { max-width: 980px; margin: 74px auto 0; text-align: center; }
+.verbForms { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); list-style: none; margin: 34px 0 0; padding: 0; }
+.verbForms li { position: relative; padding: 0 24px; }
+.verbForms li + li { border-left: 1px solid #91b4d233; }
+.verbForms li + li::before { content: '→'; position: absolute; top: 42px; left: -9px; background: #06101b; color: #abc7e0; font-size: 17px; line-height: 1; }
+.stage { font-size: 9px; letter-spacing: .19em; color: #94afc8; }
+.verbForms h3 { font-size: clamp(22px, 2.05vw, 29px); font-weight: 500; letter-spacing: -.03em; margin: 10px 0; }
+.verbForms p { font-size: 12px; line-height: 1.65; color: #b2c4d8; }
+.finale { text-align: center; margin-top: 72px; }
+.horizon { position: relative; height: 1px; max-width: 800px; margin: 0 auto 30px; background: linear-gradient(90deg, transparent, #779cbb77, transparent); }
+.horizon span { position: absolute; left: 50%; top: -1px; width: 4px; height: 3px; border-radius: 50%; background: #e2f3ff; box-shadow: 0 0 15px 3px #88c5ff55; }
+.finale p { font-size: 11px; letter-spacing: .3em; color: #b6c9e0; }
+.finale strong { display: block; color: #e5effd; font-weight: 600; letter-spacing: .22em; font-size: 24px; margin-top: 8px; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) { .astra:hover .galaxy { transform: translateY(-3px) scale(1.01); } .ize:hover .trails { translate: -3px 2px; } }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal { animation: arrive linear both; animation-timeline: view(); animation-range: entry 0% entry 85%; }
+    @keyframes arrive { from { opacity: .25; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  }
+}
+@media (min-width: 1800px) { .content { width: min(1500px, 86%); } .portalContent { padding: 42px 44px 36px; } .definition { font-size: 16px; max-width: 385px; } .ize .definition { max-width: 385px; } .qualities li, .wordFamily li { font-size: 12px; } .portal { min-height: 410px; } }
+@media (max-width: 1100px) { .content { width: 91%; } .portals { grid-template-columns: minmax(0, 1fr) 78px minmax(0, 1fr); } .portalContent { padding: 28px 24px; } .definition { font-size: 13px; } .qualities { gap: 6px; } .qualities li { font-size: 9px; } .wordFamily { grid-template-columns: repeat(2, 1fr); } .portal { min-height: 410px; } .trails { right: -90px; width: 125%; } }
+@media (max-width: 700px) {
+  .chapter { padding: 75px 0 85px; }
+  .content { width: calc(100% - 40px); }
+  .intro { margin-bottom: 35px; }
+  .eyebrow { font-size: 9px; letter-spacing: .26em; }
+  .title { font-size: clamp(49px, 12vw, 76px); margin-top: 12px; }
+  .subtitle { font-size: 16px; margin-top: 12px; }
+  .introCopy { font-size: 13px; margin-top: 16px; padding: 0 4px; }
+  .introCopy br { display: none; }
+  .space { height: 420px; opacity: .5; }
+  .space img { object-position: 28% top; }
+  .landscape { height: 420px; opacity: .6; }
+  .portals { grid-template-columns: 1fr; }
+  .portal { min-height: 0; border-radius: 21px; }
+  .portalContent { padding: 29px 25px; }
+  .label { font-size: 9px; }
+  .portal h3 { font-size: 49px; }
+  .linguistic { font-size: 11px; }
+  .definition { font-size: 14px; margin-bottom: 29px; }
+  .qualities li { font-size: 9px; gap: 8px; }
+  .qualities svg { width: 24px; height: 24px; }
+  .connection { height: 84px; }
+  .connection span { width: 43px; height: 43px; font-size: 28px; }
+  .connection::before { width: 1px; height: 100%; top: 0; left: 50%; right: auto; }
+  .connection::after { display: none; }
+  .wordFamily { grid-template-columns: repeat(4, 1fr); gap: 8px 4px; }
+  .wordFamily li { font-size: 10px; }
+  .trails { width: 110%; right: -70px; top: -60px; }
+  .synthesis { padding-top: 49px; }
+  .equation { font-size: 21px; }
+  .name { font-size: clamp(34px, 9.4vw, 55px); margin-top: 5px; }
+  .tagline { font-size: 17px; margin-top: 9px; }
+  .philosophy { font-size: 14px; line-height: 1.8; margin-top: 23px; padding: 0 5px; }
+  .coined { font-size: 10px; max-width: 250px; margin: 15px auto 0; }
+  .vocabulary { margin-top: 55px; }
+  .verbForms { grid-template-columns: 1fr; gap: 38px; margin-top: 30px; }
+  .verbForms li { padding: 0; }
+  .verbForms li + li { border: 0; }
+  .verbForms li + li::before { content: '↓'; left: 50%; top: -28px; transform: translateX(-50%); background: none; }
+  .verbForms h3 { font-size: 27px; margin: 5px 0; }
+  .verbForms p { font-size: 13px; }
+  .finale { margin-top: 47px; }
+  .finale p { font-size: 9px; letter-spacing: .22em; }
+  .finale strong { font-size: 22px; letter-spacing: .15em; }
+}
+@media (max-width: 370px) { .content { width: calc(100% - 30px); } .portalContent { padding: 26px 20px; } .qualities { gap: 4px; } .qualities li { font-size: 8px; } .wordFamily { grid-template-columns: repeat(2, 1fr); } }
+@media (prefers-reduced-motion: reduce) { .chapter *, .chapter *::before, .chapter *::after { animation: none; transition: none; } }
