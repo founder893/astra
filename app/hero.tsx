@@ -1,6 +1,6 @@
 import styles from './hero.module.css';
 
-const links = [['Home', '#home'], ['Meaning', '#meaning-behind-astramize']];
+const links = [['Home', '#home'], ['Meaning', '#meaning-behind-astramize'], ['Word Reference', '/astramize']];
 
 function Arrow() {
   return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" /></svg>;
